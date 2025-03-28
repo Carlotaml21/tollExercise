@@ -30,5 +30,12 @@ public class StationToll {
         return vehicles;
     }
 
+    public void printTollInfo() {
+        for (Vehicle v : vehicles) {
+            System.out.println(v.getClass().getSimpleName() + ": " + v.getLicensePlate());
+        }
+        System.out.println("Total recaudado: " + totalAmount);
+    }
+
 }
 

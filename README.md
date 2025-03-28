@@ -10,7 +10,7 @@ This project implements a simple **toll station system** in Java. The system mod
 
 - Each **toll station** has:
   - A name
-  - A city
+  - A region
   - A total amount collected
 
 - Each **vehicle** has:

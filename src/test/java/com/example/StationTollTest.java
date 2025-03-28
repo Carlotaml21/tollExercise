@@ -11,6 +11,6 @@ public class StationTollTest {
 
         station.processVehicle(car);
 
-        assertEquals(100,station.getTotalCollected());
+        assertEquals(100,station.getTotalAmount());
     }
 }

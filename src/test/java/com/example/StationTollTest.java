@@ -24,5 +24,15 @@ public class StationTollTest {
         assertEquals(50,station.getTotalAmount());
     }
 
+    @Test
+    public void testAddTruckToTollStation(){
+        StationToll station = new StationToll("peaje 3", "Galicia");
+        Vehicle truck = new Truck("1928", 4);
+
+        station.processVehicle(truck);
+
+        assertEquals(200,station.getTotalAmount());
+    }
+
 
 }

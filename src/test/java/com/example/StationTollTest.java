@@ -13,4 +13,16 @@ public class StationTollTest {
 
         assertEquals(100,station.getTotalAmount());
     }
+
+    @Test
+    public void testAddMotorcycleToTollStation(){
+        StationToll station = new StationToll("peaje 2", "Cantabria");
+        Vehicle motorcycle = new Motorcycle ("5678");
+
+        station.processVehicle(motorcycle);
+
+        assertEquals(50,station.getTotalAmount());
+    }
+
+
 }

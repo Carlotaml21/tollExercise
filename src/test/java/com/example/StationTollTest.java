@@ -7,7 +7,7 @@ public class StationTollTest {
     @Test
     public void testAddCarToTollStation(){
         StationToll station = new StationToll("peaje 1", "Asturias");
-        vehicle car = new Car ("1234");
+        Vehicle car = new Car ("1234");
 
         station.processVehicle(car);
 
